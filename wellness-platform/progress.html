@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WellnessHub – My Progress</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="index.html">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="34" height="34" role="img" aria-label="WellnessHub logo">
+    <circle cx="32" cy="32" r="32" fill="#2f8f5b"/>
+    <circle cx="32" cy="32" r="26" fill="none" stroke="#ffffff" stroke-opacity="0.3" stroke-width="4"/>
+    <circle cx="32" cy="32" r="26" fill="none" stroke="#f2b84b" stroke-width="4" stroke-linecap="round" stroke-dasharray="122 164" transform="rotate(-90 32 32)"/>
+    <circle cx="32" cy="18" r="4" fill="#ffffff"/>
+    <path d="M23 14L32 28L41 14M32 28V40M32 40L25 50M32 40L39 50" fill="none" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+  WellnessHub
+</a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="challenges.html">Challenges</a>
+    <a class="on" href="progress.html">My Progress</a>
+    <a href="leaderboard.html">Leaderboard</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="organizer.html">Organizer</a>
+  </nav>
+</div></header>
+
+<main class="wrap">
+  <h1>My Progress</h1>
+
+  <input type="checkbox" id="dismiss" class="hide">
+  <div class="banner">
+    <span>⏰ Reminder: you haven’t logged today’s activity for <b>10k Steps a Day</b>.</span>
+    <label for="dismiss" class="close">Dismiss ✕</label>
+  </div>
+
+  <article class="card">
+    <h3>10k Steps a Day</h3>
+    <div class="bar"><span style="--w:45%"></span></div>
+    <p class="muted">45,000 / 100,000 steps (45%) · 450 points</p>
+    <span class="badge">🌱 First Step</span>
+    <span class="badge">🔥 3-Day Streak</span>
+    <span class="badge off">⚡ Halfway</span>
+    <span class="badge off">🏆 Finisher</span>
+
+    <form action="progress.html" class="row">
+      <label>Amount <input type="number" min="1" required placeholder="e.g. 5000"></label>
+      <label>Date <input type="date" required></label>
+      <button class="btn primary">Log activity</button>
+    </form>
+  </article>
+
+  <article class="card">
+    <h3>Hydration Week</h3>
+    <div class="bar"><span style="--w:70%"></span></div>
+    <p class="muted">28 / 40 glasses (70%) · 140 points</p>
+    <span class="badge">🌱 First Step</span>
+    <span class="badge">⚡ Halfway</span>
+    <span class="badge off">🏆 Finisher</span>
+
+    <form action="progress.html" class="row">
+      <label>Amount <input type="number" min="1" required placeholder="e.g. 3"></label>
+      <label>Date <input type="date" required></label>
+      <button class="btn primary">Log activity</button>
+    </form>
+  </article>
+
+  <p><a class="btn" href="leaderboard.html">See leaderboard →</a></p>
+</main>
+<footer>WellnessHub – a non-clinical wellness challenge platform</footer>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WellnessHub – Organizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="index.html">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="34" height="34" role="img" aria-label="WellnessHub logo">
+    <circle cx="32" cy="32" r="32" fill="#2f8f5b"/>
+    <circle cx="32" cy="32" r="26" fill="none" stroke="#ffffff" stroke-opacity="0.3" stroke-width="4"/>
+    <circle cx="32" cy="32" r="26" fill="none" stroke="#f2b84b" stroke-width="4" stroke-linecap="round" stroke-dasharray="122 164" transform="rotate(-90 32 32)"/>
+    <circle cx="32" cy="18" r="4" fill="#ffffff"/>
+    <path d="M23 14L32 28L41 14M32 28V40M32 40L25 50M32 40L39 50" fill="none" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+  WellnessHub
+</a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="challenges.html">Challenges</a>
+    <a href="progress.html">My Progress</a>
+    <a href="leaderboard.html">Leaderboard</a>
+    <a href="privacy.html">Privacy</a>
+    <a class="on" href="organizer.html">Organizer</a>
+  </nav>
+</div></header>
+
+<main class="wrap">
+  <h1>Organizer Dashboard</h1>
+
+  <div class="grid">
+    <div class="card"><div class="stat">3</div><div class="muted">Challenges</div></div>
+    <div class="card"><div class="stat">5</div><div class="muted">Participants</div></div>
+    <div class="card"><div class="stat">9</div><div class="muted">Activity logs</div></div>
+    <div class="card"><div class="stat">48%</div><div class="muted">Avg. completion</div></div>
+  </div>
+
+  <div class="card tw">
+    <table>
+      <tr><th>Challenge</th><th>Enrolled</th><th>Completed</th><th>Avg. progress</th></tr>
+      <tr><td>10k Steps a Day</td><td>3</td><td>0</td><td>44%</td></tr>
+      <tr><td>Hydration Week</td><td>2</td><td>0</td><td>55%</td></tr>
+      <tr><td>Mindful Minutes</td><td>2</td><td>1</td><td>80%</td></tr>
+    </table>
+  </div>
+
+  <form class="card" action="challenges.html">
+    <h3>Create a new challenge</h3>
+    <label>Name <input type="text" required maxlength="60"></label>
+    <label>Description <textarea rows="2"></textarea></label>
+    <div class="row">
+      <label>Unit <input type="text" required placeholder="steps"></label>
+      <label>Goal <input type="number" min="1" required></label>
+      <label>Points per unit <input type="number" min="0.01" step="0.01" value="1" required></label>
+    </div>
+    <div class="row">
+      <label>Start date <input type="date" required></label>
+      <label>End date <input type="date" required></label>
+    </div>
+    <p><button class="btn primary">Create challenge</button></p>
+  </form>
+</main>
+<footer>WellnessHub – a non-clinical wellness challenge platform</footer>
+</body>
+</html>

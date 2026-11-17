@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WellnessHub – Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="index.html">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="34" height="34" role="img" aria-label="WellnessHub logo">
+    <circle cx="32" cy="32" r="32" fill="#2f8f5b"/>
+    <circle cx="32" cy="32" r="26" fill="none" stroke="#ffffff" stroke-opacity="0.3" stroke-width="4"/>
+    <circle cx="32" cy="32" r="26" fill="none" stroke="#f2b84b" stroke-width="4" stroke-linecap="round" stroke-dasharray="122 164" transform="rotate(-90 32 32)"/>
+    <circle cx="32" cy="18" r="4" fill="#ffffff"/>
+    <path d="M23 14L32 28L41 14M32 28V40M32 40L25 50M32 40L39 50" fill="none" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+  WellnessHub
+</a>
+  <nav>
+    <a class="on" href="index.html">Home</a>
+    <a href="challenges.html">Challenges</a>
+    <a href="progress.html">My Progress</a>
+    <a href="leaderboard.html">Leaderboard</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="organizer.html">Organizer</a>
+  </nav>
+</div></header>
+
+<main class="wrap">
+  <section class="hero">
+    <h1>Build healthy habits together</h1>
+    <p>Join organized wellness challenges, log your daily activity, earn points and badges, and climb the leaderboard.</p>
+    <a class="btn primary" href="challenges.html">Browse challenges</a>
+  </section>
+
+  <div class="grid">
+    <div class="card"><h3>🏃 Join challenges</h3><p class="muted">Steps, hydration, mindfulness and more, created by organizers.</p></div>
+    <div class="card"><h3>📈 Track progress</h3><p class="muted">Log activity and watch your progress bar and points grow.</p></div>
+    <div class="card"><h3>🏆 Earn badges</h3><p class="muted">Unlock badges at every milestone and compete on the leaderboard.</p></div>
+  </div>
+
+  <form class="card" action="challenges.html" style="max-width:420px;margin:20px auto">
+    <h3>Sign in</h3>
+    <label>Name <input type="text" required placeholder="Your name"></label>
+    <label>Email <input type="email" required placeholder="you@example.com"></label>
+    <label>Role
+      <select><option>Participant</option><option>Organizer</option></select>
+    </label>
+    <p><button class="btn primary">Continue</button></p>
+  </form>
+</main>
+<footer>WellnessHub – a non-clinical wellness challenge platform</footer>
+</body>
+</html>
